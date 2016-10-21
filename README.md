@@ -1,9 +1,9 @@
-Brandi HTML5 Bootstraped Business Template
+NWISS Website Template
 ========
 
 <img src ="https://cloud.githubusercontent.com/assets/10640964/5989549/0f93dfc8-a9b6-11e4-8f1e-75189f6a5759.jpg" />
 
-<a href="http://themefisher.com/download/brandi-corporate-template/> Live Preview </a>
+<a href="http://www.nwissbd.com> Live Preview </a>
 
 =========
 
@@ -17,6 +17,6 @@ Valid HTML5/CSS3 Markup
 Google Fonts Support
 Clean Code, All files are well commented and organized
 Documentation File Included
-PSD credit: https://dribbble.com/themecurve
+PSD credit: https://www.nwissbd.com/
 
-A template By <a href="http://www.themefisher.com>Themefisher</a>
+A template By <a href="http://www.nwissbd.com>NWISS</a>
