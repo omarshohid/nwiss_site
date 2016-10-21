@@ -839,6 +839,10 @@
                   <div class="input-field">
                     <input type="email" name="email" id="email" placeholder="Email" class="form-control">
                   </div>
+                  <div class="input-field">
+                    <input type="subject" name="subject" id="subject" placeholder="Subject" class="form-control">
+                 </div>
+
                 </div>
                 <div class="input-group">
                   <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
@@ -997,6 +1001,9 @@
               required: true,
               email: true
             },
+            subject: {
+              required: true
+            },
             message: {
               required: true
             }
@@ -1008,6 +1015,9 @@
             },
             email: {
               required: "no email, no message"
+            },
+            subject:{
+              required: "Please enter a subject of your query"
             },
             message: {
               required: "um...yea, you have to write something to send this form.",
