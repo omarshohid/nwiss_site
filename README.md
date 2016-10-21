@@ -7,7 +7,6 @@ NWISS Website Template
 
 =========
 
-Brandi is a corporate template that is perfect for individuals or businesses. This theme comes with crisp animation and is responsive meaning it looks great on all devices.These demo is just a example … you can make your own color schemes to further customize your template.
 
 Key Feature
 
