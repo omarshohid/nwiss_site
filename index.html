@@ -830,28 +830,28 @@
 					<!-- end contact address -->
 					
 					<!-- contact form -->
-					<div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
-						<div class="contact-form">
-							<h3>Say hello!</h3>
-							<form action="process.php" id="contact-form">
-								<div class="input-group name-email">
-									<div class="input-field">
-										<input type="text" name="name" id="name" placeholder="Name" class="form-control">
-									</div>
-									<div class="input-field">
-										<input type="email" name="email" id="email" placeholder="Email" class="form-control">
-									</div>
-								</div>
-								<div class="input-group">
-									<textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
-								</div>
-								<div class="input-group">
-									<input type="submit" id="form-submit" class="pull-right" value="Send message">
-								</div>
-							</form>
-						</div>
-					</div>
-					<!-- end contact form -->
+          <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
+            <div class="contact-form">
+              <h3>Say hello!</h3>
+              <form action="#" id="contact-form">
+                <div class="input-group name-email">
+                  <div class="input-field">
+                    <input type="text" name="name" id="name" placeholder="Name" class="form-control">
+                  </div>
+                  <div class="input-field">
+                    <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+                  </div>
+                </div>
+                <div class="input-group">
+                  <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+                </div>
+                <div class="input-group">
+                  <input type="submit" id="form-submit" class="pull-right" value="Send message">
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- end contact form -->
 					
 					<!-- footer social links -->
 					<div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
@@ -906,6 +906,7 @@
 							<h6>Explore</h6>
 							<ul>
 								<li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Facebook</a></li>
 								<li><a href="#">Twitter</a></li>
 								<li><a href="#">Google</a></li>
 							</ul>
@@ -916,9 +917,9 @@
 						<div class="footer-single">
 							<h6>Support</h6>
 							<ul>
-								<li><a href="#">Contact Us</a></li>
+								<li><a href="#contact">Contact Us</a></li>
 								<li><a href="#">Market Blog</a></li>
-								<li><a href="#">Help Center</a></li>
+								<li><a href="#contact">Help Center</a></li>
 								<li><a href="#">Pressroom</a></li>
 							</ul>
 						</div>
@@ -980,64 +981,67 @@
 			wow.init();
 		</script> 
 		<!-- Custom Functions -->
-        <script src="js/custom.js"></script>
-		 <script src="js/script.js"></script>
-		
-		<script type="text/javascript">
-			$(function(){
-				/* ========================================================================= */
-				/*	Contact Form
-				/* ========================================================================= */
-				
-				$('#contact-form').validate({
-					rules: {
-						name: {
-							required: true,
-							minlength: 2
-						},
-						email: {
-							required: true,
-							email: true
-						},
-						message: {
-							required: true
-						}
-					},
-					messages: {
-						name: {
-							required: "come on, you have a name don't you?",
-							minlength: "your name must consist of at least 2 characters"
-						},
-						email: {
-							required: "no email, no message"
-						},
-						message: {
-							required: "um...yea, you have to write something to send this form.",
-							minlength: "thats all? really?"
-						}
-					},
-					submitHandler: function(form) {
-						$(form).ajaxSubmit({
-							type:"POST",
-							data: $(form).serialize(),
-							url:"process.php",
-							success: function() {
-								$('#contact-form :input').attr('disabled', 'disabled');
-								$('#contact-form').fadeTo( "slow", 0.15, function() {
-									$(this).find(':input').attr('disabled', 'disabled');
-									$(this).find('label').css('cursor','default');
-									$('#success').fadeIn();
-								});
-							},
-							error: function() {
-								$('#contact-form').fadeTo( "slow", 0.15, function() {
-									$('#error').fadeIn();
-								});
-							}
-						});
-					}
-				});
-			});
-		</script>
+        <script src="js/custom.js"></script>		
+    
+    <script type="text/javascript">
+      $(function(){
+        /* ========================================================================= */
+        /*  Contact Form
+        /* ========================================================================= */
+        
+        $('#contact-form').validate({
+          rules: {
+            name: {
+              required: true,
+              minlength: 2
+            },
+            email: {
+              required: true,
+              email: true
+            },
+            message: {
+              required: true
+            }
+          },
+          messages: {
+            name: {
+              required: "come on, you have a name don't you?",
+              minlength: "your name must consist of at least 2 characters"
+            },
+            email: {
+              required: "no email, no message"
+            },
+            message: {
+              required: "um...yea, you have to write something to send this form.",
+              minlength: "thats all? really?"
+            }
+          },
+          submitHandler: function(form) {
+            $(form).ajaxSubmit({
+              type:"POST",
+              data: $(form).serialize(),
+              url:"process.php",
+              success: function() {
+                $('#contact-form :input').attr('disabled', 'disabled');
+                $('#contact-form').fadeTo( "slow", 0.15, function() {
+                  $(this).find(':input').attr('disabled', 'disabled');
+                  $(this).find('label').css('cursor','default');
+                  $('#success').fadeIn();
+                });
+              },
+              error: function() {
+                $('#contact-form').fadeTo( "slow", 0.15, function() {
+                  $('#error').fadeIn();
+                });
+              }
+            });
+          }
+        });
+      });
+    </script>
+
+
+
+
     </body>
 </html>
